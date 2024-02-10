@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := device/oneplus/OnePlus7Pro
+LOCAL_PATH := device/oneplus/guacamole
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)

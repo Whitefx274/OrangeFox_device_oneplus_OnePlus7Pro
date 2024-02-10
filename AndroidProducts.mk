@@ -2,9 +2,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_OnePlus7Pro.mk
+    $(LOCAL_DIR)/omni_guacamole.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_OnePlus7Pro-user \
-    omni_OnePlus7Pro-userdebug \
-    omni_OnePlus7Pro-eng
+    omni_guacamole-user \
+    omni_guacamole-userdebug \
+    omni_guacamole-eng

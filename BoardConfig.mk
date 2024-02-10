@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oneplus/OnePlus7Pro
+DEVICE_PATH := device/oneplus/guacamole
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true

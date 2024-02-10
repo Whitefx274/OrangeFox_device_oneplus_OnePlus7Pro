@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=OnePlus7Pro
+DEVICE=guacamole
 VENDOR=oneplus
 
 # Load extract_utils and do some sanity checks

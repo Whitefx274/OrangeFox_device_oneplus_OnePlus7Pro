@@ -8,10 +8,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from OnePlus7Pro device
-$(call inherit-product, device/oneplus/OnePlus7Pro/device.mk)
+# Inherit from guacamole device
+$(call inherit-product, device/oneplus/guacamole/device.mk)
 
-PRODUCT_NAME := omni_OnePlus7Pro
+PRODUCT_NAME := omni_guacamole
 PRODUCT_DEVICE := guacamole
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
