@@ -3,8 +3,6 @@
 #echo "Cloning OnePlus 7Pro Tree"
 # add clang-proton to our path
 #export PATH="$(gettop)/prebuilts/clang/host/linux-x86/clang-proton/bin:$PATH"
-#echo "Cloning Common tree"
-#git clone https://github.com/Whitefx274/device_oneplus_sm8150-common-TWRP -b android-12.1 device/oneplus/sm8150-common || echo "Already Done"
 #echo "Cloning kernel tree"
 #git clone https://github.com/Whitefx274/android_kernel_oneplus_sm8150 -b android-12.1 kernel/oneplus/sm8150 || echo "Already Done"
 echo ""
@@ -46,7 +44,7 @@ export FOX_AB_DEVICE=1
 export TW_MAX_BRIGHTNESS=1200
 # export OF_HIDE_NOTCH=1
 export OF_SCREEN_H=2340
-#export OF_STATUS_H=-40
+export OF_STATUS_H=-10
 export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 
