@@ -20,7 +20,7 @@ export OF_MAINTAINER=WHITEFX274
 
 #Fox config location
 export FOX_SETTINGS_ROOT_DIRECTORY="/data/fox/"
-export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
+#export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 
 # Build environment stuffs
 export ALLOW_MISSING_DEPENDENCIES=true
