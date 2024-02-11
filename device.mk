@@ -84,3 +84,8 @@ TW_OVERRIDE_SYSTEM_PROPS := \
 #persist.sys.usb.config=mtp
 
 cc_prebuilt_binary += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+
+PRODUCT_COPY_FILES += \
+    $(OUT_DIR)/target/product/guacamole/system/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/vintf/manifest.xml \
+    $(OUT_DIR)/target/product/guacamole/vendor/etc/vintf/manifest.xml:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/etc/vintf/manifest.xml
+
