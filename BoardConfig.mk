@@ -45,7 +45,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
-TARGET_USES_UEFI := true
+#TARGET_USES_UEFI := true
 
 # Disable secure discard
 BOARD_SUPPRESS_SECURE_ERASE := true
@@ -59,7 +59,7 @@ BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.vbmeta.avb_version=1.0
-BOARD_KERNEL_IMAGE_NAME := Image-dtb
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
@@ -121,4 +121,4 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
+#TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop

@@ -1,8 +1,4 @@
-# Media
-ro.media.recorder-max-base-layer-fps=60
-
-# System (Recovery)
-persist.sys.binary_xml=false
-
-# USAP
-persist.device_config.runtime_native.usap_pool_enabled=true
+ro.display.series=OnePlus 7 Pro
+ro.product.board=msmnile
+ro.board.platform=msmnile
+ro.adb.secure=0
