@@ -81,6 +81,6 @@ TW_OVERRIDE_SYSTEM_PROPS := \
 
 # Forcefully add mtp support (adb is already there)
 #PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-#    persist.sys.usb.config=mtp
+#persist.sys.usb.config=mtp
 
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
+cc_prebuilt_binary += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
