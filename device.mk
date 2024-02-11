@@ -70,5 +70,5 @@ TW_INCLUDE_FASTBOOTD := true
 TW_OVERRIDE_SYSTEM_PROPS := \
 
 # Forcefully add mtp support (adb is already there)
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    persist.sys.usb.config=mtp

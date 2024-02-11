@@ -41,13 +41,12 @@ export OF_SKIP_FBE_DECRYPTION="1"
 export FOX_AB_DEVICE=1
 
 # Screen specifications
-export TW_MAX_BRIGHTNESS=1500
+export TW_MAX_BRIGHTNESS=1250
 # export OF_HIDE_NOTCH=1
-export OF_SCREEN_H=2640
+export OF_SCREEN_H=2440
 #export OF_STATUS_H=-10
 export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
-
 
 # Device stuff
 export OF_KEEP_FORCED_ENCRYPTION=1
