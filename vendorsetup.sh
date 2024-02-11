@@ -3,8 +3,8 @@
 #echo "Cloning OnePlus 7Pro Tree"
 # add clang-proton to our path
 #export PATH="$(gettop)/prebuilts/clang/host/linux-x86/clang-proton/bin:$PATH"
-#echo "Cloning kernel tree"
-git clone https://github.com/Whitefx274/android_kernel_oneplus_sm8150 -b android-12.1 kernel/oneplus/sm8150 || echo "Already Done"
+echo "Cloning kernel tree"
+git clone https://github.com/Whitefx274/Neptune_kernel_sm8150_oneplus -b inline-erofs kernel/oneplus/sm8150 || echo "Already Done"
 echo ""
 
 # add clang-proton to our path
