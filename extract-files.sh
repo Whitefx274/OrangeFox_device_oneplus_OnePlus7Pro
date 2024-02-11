@@ -1,10 +1,14 @@
 #!/bin/bash
+#
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2021 The LineageOS Project
+#
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE=OnePlus7Pro
+DEVICE=guacamole
 VENDOR=oneplus
 
 # Load extract_utils and do some sanity checks
@@ -49,8 +53,19 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        system_ext/lib64/libwfdnative.so)
+            sed -i "s/android.hidl.base@1.0.so/libhidlbase.so\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00/" "${2}"
+            ;;
+        vendor/bin/hw/qcrild)
+            "${PATCHELF}" --add-needed libril_shim.so "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
