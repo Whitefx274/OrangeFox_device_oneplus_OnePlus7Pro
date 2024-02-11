@@ -55,9 +55,9 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_SCREEN_DENSITY := 560
 
 # HIDL
-DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(VENDOR_PATH)/manifest.xml
-ODM_MANIFEST_FILES := $(VENDOR_PATH)/manifest-qva.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest-qva.xml
 
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
@@ -74,7 +74,7 @@ KERNEL_LD := LD=ld.lld
 #TARGET_KERNEL_CLANG_CUSTOM := true
 #TARGET_KERNEL_CLANG_VERSION := latest
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/sm8150-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/sm8150-perf-v2_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8150
 
 # Kernel - prebuilt
