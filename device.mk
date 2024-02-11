@@ -68,6 +68,7 @@ TW_Y_OFFSET := 80
 TW_H_OFFSET := -80
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+TW_NO_USB_STORAGE := true
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
 TW_USE_LEDS_HAPTICS := true
@@ -81,3 +82,5 @@ TW_OVERRIDE_SYSTEM_PROPS := \
 # Forcefully add mtp support (adb is already there)
 #PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 #    persist.sys.usb.config=mtp
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root)
