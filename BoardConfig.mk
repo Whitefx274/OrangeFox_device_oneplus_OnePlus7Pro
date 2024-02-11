@@ -45,6 +45,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
+TARGET_USES_UEFI := true
 
 # Disable secure discard
 BOARD_SUPPRESS_SECURE_ERASE := true
