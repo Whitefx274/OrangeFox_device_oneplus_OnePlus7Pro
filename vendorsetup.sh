@@ -62,15 +62,15 @@ export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
 # -- Add settings for R12 --
 #export FOX_ENABLE_APP_MANAGER="1"
-export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
+#export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 export FOX_PATCH_VBMETA_FLAG=1
 #export OF_FORCE_USE_RECOVERY_FSTAB=true
 export OF_DEFAULT_KEYMASTER_VERSION=4.0
-export OF_NO_SPLASH_CHANGE=true
+#export OF_NO_SPLASH_CHANGE=true
 export OF_ADVANCED_SECURITY=1
 #export FOX_NO_SAMSUNG_SPECIAL=1
 export OF_DISABLE_MIUI_OTA_BY_DEFAULT=1
-#export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
+export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 # -- end R12 settings --
 
 
