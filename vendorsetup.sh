@@ -30,7 +30,7 @@ export TARGET_DEVICE_ALT="guacamole, guacamoleb, guacamolec, oneplus 7, OnePlus7
 # Use magisk boot for patching
 export OF_USE_MAGISKBOOT=1
 export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
-#export FOX_USE_SPECIFIC_MAGISK_ZIP=~/device/oneplus/guacamole/Magisk/Magisk-26.4.apk
+export FOX_USE_SPECIFIC_MAGISK_ZIP=~/device/oneplus/guacamole/magisk/Magisk-27.0.zip
 
 export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
@@ -41,10 +41,10 @@ export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 export FOX_AB_DEVICE=1
 
 # Screen specifications
-export TW_MAX_BRIGHTNESS=1250
+export TW_MAX_BRIGHTNESS=1000
 #export OF_HIDE_NOTCH=1
 export OF_SCREEN_H=2340
-#export OF_STATUS_H=-10
+export OF_STATUS_H=-10
 export OF_STATUS_INDENT_LEFT=48
 export OF_STATUS_INDENT_RIGHT=48
 
@@ -61,7 +61,7 @@ export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
 export FOX_BUGGED_AOSP_ARB_WORKAROUND="1601559499"
 
 # -- Add settings for R12 --
-#export FOX_ENABLE_APP_MANAGER="1"
+export FOX_ENABLE_APP_MANAGER="1"
 #export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 export FOX_PATCH_VBMETA_FLAG=1
 #export OF_FORCE_USE_RECOVERY_FSTAB=true
