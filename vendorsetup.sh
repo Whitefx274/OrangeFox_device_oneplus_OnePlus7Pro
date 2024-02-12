@@ -35,7 +35,7 @@ export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
 # Skip mounting storage
-export OF_SKIP_FBE_DECRYPTION="1"
+#export OF_SKIP_FBE_DECRYPTION="1"
 
 # We have a/b partitions
 export FOX_AB_DEVICE=1
