@@ -17,7 +17,7 @@ export FOX_VERSION="R12.1"
 export OF_MAINTAINER=WHITEFX274
 
 #Fox config location
-export FOX_SETTINGS_ROOT_DIRECTORY="/data/private/"
+export FOX_SETTINGS_ROOT_DIRECTORY="/data/recovery/"
 #export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 
 # Build environment stuffs
@@ -36,7 +36,7 @@ export FOX_DELETE_MAGISK_ADDON=1
 export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
 # Skip mounting storage
-#export OF_SKIP_FBE_DECRYPTION="1"
+export OF_SKIP_FBE_DECRYPTION="1"
 
 # We have a/b partitions
 export FOX_AB_DEVICE=1
