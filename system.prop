@@ -80,6 +80,7 @@ ro.nfc.port=I2C
 # OnePlus
 ro.vendor.product.manufacturer.db=OP_PHONE
 ro.vendor.product.device.db=OP_DEVICE
+ro.product.device=OnePlus7Pro
 
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60

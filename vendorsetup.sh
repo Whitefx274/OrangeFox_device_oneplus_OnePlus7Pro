@@ -17,8 +17,8 @@ export FOX_VERSION="R12.1"
 export OF_MAINTAINER=WHITEFX274
 
 #Fox config location
-#export FOX_SETTINGS_ROOT_DIRECTORY="/data/fox/"
-export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
+export FOX_SETTINGS_ROOT_DIRECTORY="/system/fox/"
+#export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 
 # Build environment stuffs
 export ALLOW_MISSING_DEPENDENCIES=true
@@ -36,7 +36,7 @@ export FOX_DELETE_MAGISK_ADDON=true
 export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
 # Skip mounting storage
-export OF_SKIP_FBE_DECRYPTION="1"
+#export OF_SKIP_FBE_DECRYPTION="1"
 
 # We have a/b partitions
 export FOX_AB_DEVICE=1
@@ -78,7 +78,7 @@ export OF_QUICK_BACKUP_LIST="/boot;/data;/system_image;/vendor_image;"
 # Add some extras
 export OF_USE_LEGACY_BATTERY_SERVICES=1
 #export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
-export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
+#export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 export FOX_USE_TAR_BINARY=1
 export FOX_USE_ZIP_BINARY=1
 export FOX_ASH_IS_BASH=1
