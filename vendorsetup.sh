@@ -17,7 +17,7 @@ export FOX_VERSION="R12.1"
 export OF_MAINTAINER=WHITEFX274
 
 #Fox config location
-export FOX_SETTINGS_ROOT_DIRECTORY="/system/fox/"
+export FOX_SETTINGS_ROOT_DIRECTORY="/data/"
 #export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 
 # Build environment stuffs
