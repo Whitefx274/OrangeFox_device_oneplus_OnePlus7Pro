@@ -33,7 +33,7 @@ export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 export FOX_USE_SPECIFIC_MAGISK_ZIP=/device/oneplus/guacamole/magisk/Magisk-v27.0.zip
 export FOX_DELETE_MAGISK_ADDON=1
 
-#export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
+export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 
 # Skip mounting storage
 #export OF_SKIP_FBE_DECRYPTION="1"
