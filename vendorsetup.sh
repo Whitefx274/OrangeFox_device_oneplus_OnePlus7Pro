@@ -9,7 +9,7 @@ git clone https://github.com/nebrassy/android_kernel_oneplus_sm8150 -b android-1
 echo "Proceeding"
 Cloning own version of bootable/recovery
 sudo rm bootable/recovery -r
-git clone https://gitlab.com/whitefx274/ofox-base -b fox_12.1 bootable/recovery
+git clone https://gitlab.com/whitefx274/ofox-bootable-recovery -b fox_12.1 bootable/recovery
 
 # add clang-proton to our path
 #export PATH="$(gettop)/prebuilts/clang/host/linux-x86/clang-proton/bin:$PATH"
