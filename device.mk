@@ -576,8 +576,8 @@ TW_HAS_EDL_MODE := true
 TW_FRAMERATE := 60
 
 #Properties
-TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
+#TW_OVERRIDE_SYSTEM_PROPS := \
+#    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
