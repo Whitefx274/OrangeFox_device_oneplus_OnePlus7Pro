@@ -21,7 +21,7 @@ export FOX_VERSION="R12.1"
 export OF_MAINTAINER=WHITEFX274
 
 #Fox config location
-export FOX_SETTINGS_ROOT_DIRECTORY="/data/recovery/"
+#export FOX_SETTINGS_ROOT_DIRECTORY="/data/recovery/"
 #export FOX_USE_DATA_RECOVERY_FOR_SETTINGS="1"
 
 # Build environment stuffs
@@ -47,7 +47,7 @@ export FOX_AB_DEVICE=1
 
 # Screen specifications
 export TW_MAX_BRIGHTNESS=1000
-export OF_HIDE_NOTCH=1
+#export OF_HIDE_NOTCH=1
 export OF_SCREEN_H=2340
 export OF_STATUS_H=80
 export OF_STATUS_INDENT_LEFT=48
