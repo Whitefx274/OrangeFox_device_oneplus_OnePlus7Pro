@@ -1,15 +1,49 @@
+echo ""
 # Clone/Fetch Upstream Device Dependencies
 # Device Tree
 #echo "Cloning OnePlus 7Pro Tree"
 # add clang-proton to our path
 #export PATH="$(gettop)/prebuilts/clang/host/linux-x86/clang-proton/bin:$PATH"
 
+kernel_dir="kernel/oneplus/sm8150"
+bootable_recov="bootable/recovery"
+
 echo "Cloning kernel tree"
-git clone https://github.com/nebrassy/android_kernel_oneplus_sm8150 -b android-12.1 kernel/oneplus/sm8150 || echo "Already Done"
-echo "Proceeding"
-Cloning own version of bootable/recovery
-sudo rm bootable/recovery -r
-git clone https://gitlab.com/whitefx274/ofox-bootable-recovery -b fox_12.1 bootable/recovery
+if [ -e "$kernel_dir" ]; then
+    echo "Kernel exists. No need to download."
+    echo ""
+else
+    # Download the ZIP file
+    git clone --depth=1 https://github.com/nebrassy/android_kernel_oneplus_sm8150 -b android-12.1 kernel/oneplus/sm8150
+
+    # Check if the download was successful
+    if [ $? -eq 0 ]; then
+        echo "Kernel Download successful."
+        echo ""
+    else
+        echo "Kernel Download failed."
+        echo ""
+    fi
+fi
+
+
+echo "Cloning bootable/recovery"
+if [ -e "$bootable_recov" ]; then
+    echo "bootable/recovery exists. No need to download."
+    echo ""
+else
+    # Download the bootable/recovery dir.
+    git clone https://gitlab.com/whitefx274/ofox-bootable-recovery -b fox_12.1 bootable/recovery
+
+    # Check if the download was successful
+    if [ $? -eq 0 ]; then
+        echo "bootable/recovery Download successful."
+        echo ""
+    else
+        echo "bootable/recovery failed."
+        echo ""
+    fi
+fi
 
 # add clang-proton to our path
 #export PATH="$(gettop)/prebuilts/clang/host/linux-x86/clang-proton/bin:$PATH"
